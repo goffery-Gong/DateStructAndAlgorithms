@@ -2,7 +2,8 @@ package exe.Algorithms;
 
 import java.awt.Font;
 
-import std.StdDraw;
+import edu.princeton.cs.algs4.StdDraw;
+
 
 public class Exe2_1_18 {
 	

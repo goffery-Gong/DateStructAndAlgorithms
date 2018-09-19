@@ -1,7 +1,6 @@
 package exe.secondClass.list;
 
-import std.StdDraw;
-
+import edu.princeton.cs.algs4.StdDraw;
 /**
  * 要求实现一个函数，将两个链表表示的递增整数序列合并为一个非递减的整数序列。
  * @author PC

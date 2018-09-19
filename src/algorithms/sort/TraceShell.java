@@ -2,8 +2,8 @@ package algorithms.sort;
 
 import java.awt.Font;
 
+import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdIn;
-import std.StdDraw;
 
 public class TraceShell {
 	

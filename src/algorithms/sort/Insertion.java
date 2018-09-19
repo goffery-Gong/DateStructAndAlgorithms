@@ -1,6 +1,6 @@
 package algorithms.sort;
 
-import std.StdDraw;
+
 
 /**
  * array using Insertion sort.
