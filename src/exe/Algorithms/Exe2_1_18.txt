@@ -1,0 +1,4 @@
+see 
+/DataStrucExe/src/algorithms/sort/InsertionBars.java
+/DataStrucExe/src/algorithms/sort/SelectionBars.java
+/DataStrucExe/src/algorithms/sort/TraceInsertion.java
