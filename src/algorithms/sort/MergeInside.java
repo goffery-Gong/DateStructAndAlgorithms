@@ -4,16 +4,14 @@ import edu.princeton.cs.introcs.StdOut;
 
 /**
  * @ClassName: Merge 
- * @Description: 自顶向下的归并排序（aux数组变为sort的局部变量，减少性能开销）
+ * @Description: 自顶向下的归并排序(将aux数组建立在merge函数中,每次循环中调用merge都会创建数组，增加内存开销)
  *
  * @author Goffery Gong
  * @date 2018年9月20日 下午4:47:49
  */
-public class Merge{
-	private static Comparable[] aux;
+public class MergeInside {
 	//排序函数
 	public static void sort(Comparable[] a) {
-		aux= new Comparable[a.length];
 		sort(a, 0, a.length - 1);
 	}
 
@@ -30,7 +28,7 @@ public class Merge{
 	private static void merge(Comparable[] a, int lo, int mid, int hi) {
 		int i = lo;
 		int j = mid + 1;
-		
+		Comparable[] aux = new Comparable[a.length];
 
 		//首先将数组拷贝一份到aux[]
 		for (int k = lo; k <= hi; k++)
