@@ -51,10 +51,12 @@ public class MergeInside {
 	}
 
 	public static void main(String[] args) {
-		Integer[] a = { 2, 5, 8, 3, 6, 9 };
-		sort(a);
-		/*for (int i = 0; i < a.length; i++)
-			System.out.print(a[i]);*/
+		Integer[] a = { 5,2,3, 5, 6, 9 };
+		//sort(a);
+		
+		merge(a,0,2,5);
+		for (int i = 0; i < a.length; i++)
+			System.out.print(a[i]);
 		
 		double time1 = SortCompare.timeSortedInput("MergeInside", 1000, 100);   // Total for alg1. 
         double time2 = SortCompare.timeSortedInput("Merge", 1000, 100);   // Total for alg2. 

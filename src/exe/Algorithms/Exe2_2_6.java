@@ -1,5 +1,7 @@
-package algorithms.sort;
+package exe.Algorithms;
 
+import algorithms.sort.RandomArray;
+import algorithms.sort.SortCompare;
 import edu.princeton.cs.introcs.StdOut;
 
 /**
@@ -9,8 +11,9 @@ import edu.princeton.cs.introcs.StdOut;
  * @author Goffery Gong
  * @date 2018年9月20日 下午4:47:49
  */
-public class Merge{
+public class Exe2_2_6{
 	//private static Comparable[] aux;
+	private static int count;
 	
 	//排序函数
 	public static void sort(Comparable[] a) {
@@ -33,19 +36,28 @@ public class Merge{
 		int j = mid + 1;
 		
 		//首先将数组拷贝一份到aux[]
-		for (int k = lo; k <= hi; k++)
+		for (int k = lo; k <= hi; k++){
 			aux[k] = a[k];
+			count+=2;
+		}
 		//判断aux中的元素大小，归并到a[]中
 		for (int k = lo; k <= hi; k++) {
-			if (i > mid)
+			if (i > mid){
 				a[k] = aux[j++];
-			else if (j > hi)
+				count+=2;
+			}
+			else if (j > hi){
 				a[k] = aux[i++];
+				count+=2;
+			}
 			else if (less(aux[j], aux[i])){
 				a[k] = aux[j++];
+				count+=4;
 			}
-			else
+			else{
 				a[k] = aux[i++];
+				count+=2;
+			}
 		}
 	}
 
@@ -54,14 +66,11 @@ public class Merge{
 	}
 
 	public static void main(String[] args) {
-		//Integer[] a = { 2, 5, 8, 3, 6, 9 };
-		Double[] a= RandomArray.randomArray(10);
+		Integer[] a = { 5,2};
+		//Double[] a= RandomArray.randomArray(10);
 		sort(a);
 		for (int i = 0; i < a.length; i++)
 			System.out.println(a[i]);
-		double time1 = SortCompare.timeSortedInput("MergeInside", 1000, 100);   // Total for alg1. 
-        double time2 = SortCompare.timeSortedInput("Merge", 1000, 100);   // Total for alg2. 
-        StdOut.printf("For %d random Doubles\n    %s is", 1000, "Merge"); 
-        StdOut.printf(" %.1f times faster than %s\n", time1/time2, "MergeInside");  
+		System.out.println("访问数组次数为："+count);
 	}
 }
