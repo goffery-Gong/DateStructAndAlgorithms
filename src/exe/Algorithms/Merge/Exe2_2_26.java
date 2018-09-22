@@ -1,4 +1,4 @@
-package exe.Algorithms;
+package exe.Algorithms.Merge;
 
 import algorithms.sort.SortCompare;
 import edu.princeton.cs.introcs.StdOut;

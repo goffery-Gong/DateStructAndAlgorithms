@@ -1,4 +1,4 @@
-package exe.Algorithms;
+package exe.Algorithms.datastructure;
 
 import java.util.Scanner;
 

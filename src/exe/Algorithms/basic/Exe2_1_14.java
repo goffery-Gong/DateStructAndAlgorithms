@@ -1,4 +1,4 @@
-package exe.Algorithms;
+package exe.Algorithms.basic;
 
 import algorithms.sort.Sort;
 

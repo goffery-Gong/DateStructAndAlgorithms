@@ -1,4 +1,4 @@
-package exe.Algorithms;
+package exe.Algorithms.Merge;
 
 import algorithms.sort.RandomArray;
 import algorithms.sort.SortCompare;

@@ -1,4 +1,4 @@
-package exe.Algorithms;
+package exe.Algorithms.Merge;
 
 public class Exe2_2_5 {
 	public static void topDownSort(Comparable[] a) {

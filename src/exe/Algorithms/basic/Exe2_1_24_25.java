@@ -1,4 +1,4 @@
-package exe.Algorithms;
+package exe.Algorithms.basic;
 
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.introcs.StdOut;

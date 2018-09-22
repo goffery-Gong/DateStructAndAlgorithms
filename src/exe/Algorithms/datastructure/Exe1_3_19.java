@@ -1,4 +1,4 @@
-package exe.Algorithms;
+package exe.Algorithms.datastructure;
 
 /**
  * 给出一段代码，删除链表的尾结点，其中链表的首结点为first。

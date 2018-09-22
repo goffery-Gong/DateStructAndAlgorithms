@@ -1,4 +1,4 @@
-package exe.Algorithms;
+package exe.Algorithms.datastructure;
 
 import edu.princeton.cs.algs4.Stack;
 

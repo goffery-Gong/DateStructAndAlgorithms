@@ -1,4 +1,6 @@
-package exe.Algorithms;
+package exe.Algorithms.datastructure;
+
+import exe.Algorithms.MyLink;
 
 public class Exe1_3_21 {
 
