@@ -1,3 +1,5 @@
+- [练习代码](https://github.com/goffery-Gong/DateStructAndAlgorithms/tree/master/src/exe/Algorithms/Merge)
+
 ## 2.2.4 
 是的。如果其中一个子数组不是有序的，那么其输入顺序将会在输出结果中出现。
 
