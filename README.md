@@ -15,5 +15,5 @@
 ## 2.1 初级排序算法
 
 ## 2.2 归并排序
-
+- [归并排序习题](https://github.com/goffery-Gong/DateStructAndAlgorithms/blob/master/src/exe/Algorithms/Merge/Exe2_2_X.md)
 ## 2.3 快速排序
