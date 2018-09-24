@@ -11,7 +11,7 @@ import edu.princeton.cs.introcs.StdOut;
  */
 public class Merge{
 	//private static Comparable[] aux;
-	
+	private static int time=0;
 	//≈≈–Ú∫Ø ˝
 	public static void sort(Comparable[] a) {
 		Comparable[] aux= new Comparable[a.length];
@@ -23,8 +23,18 @@ public class Merge{
 		if (lo >= hi)
 			return;
 		int mid = (lo + hi) / 2;
+		
+		//¥Ú”°ø’∏Ò
+		for(int i=0;i<time;i++) System.out.print(" ");
+		//¥Ú”°sort
+		System.out.println("sort(a,"+lo+","+hi+")");
+		time++;
+		
 		sort(a,aux, lo, mid);		//Ω´◊Û∞Î±ﬂ≈≈–Ú
 		sort(a,aux, mid + 1, hi);	//Ω´”“∞Î±ﬂ≈≈–Ú
+		
+		//¥Ú”°merge
+		System.out.println("merge(a,"+lo+","+mid+","+hi+")");
 		merge(a,aux, lo, mid, hi);	//πÈ≤¢Ω·π˚
 	}
 
@@ -54,8 +64,8 @@ public class Merge{
 	}
 
 	public static void main(String[] args) {
-		//Integer[] a = { 2, 5, 8, 3, 6, 9 };
-		Double[] a= RandomArray.randomArray(10);
+		Integer[] a = { 5, 2, 6, 8, 7, 6 ,9,10};
+		//Double[] a= RandomArray.randomArray(10);
 		sort(a);
 		for (int i = 0; i < a.length; i++)
 			System.out.println(a[i]);

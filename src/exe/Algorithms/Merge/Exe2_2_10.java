@@ -29,13 +29,16 @@ public class Exe2_2_10 {
 
 	private static void merge(Comparable[] a, Comparable[] aux, int lo,
 			int mid, int hi) {
+		//将前一半元素放到aux中
 		for (int i = lo; i <= mid; i++)
 			aux[i] = a[i];
+		//将后一半元素降序放到aux中
 		for (int j = mid + 1; j <= hi; j++)
 			aux[j] = a[hi - j + mid + 1];
 
 		int i = lo;
 		int j = hi;
+		//经过上面操作，右边j--，左边i++,就不需要mid作为分割进行遍历aux数组了
 		for (int k = lo; k <= hi; k++)
 			if (less(aux[j], aux[i]))
 				a[k] = aux[j--];
@@ -49,18 +52,10 @@ public class Exe2_2_10 {
 	}
 
 	public static void main(String[] args) {
-		//Integer[] a = { 2, 5, 8, 3, 6, 9 };
-		Double[] a = RandomArray.randomArray(10);
+		Integer[] a = {  5, 2, 6, 8, 7, 6 ,9,10 };
+		//Double[] a = RandomArray.randomArray(10);
 		fastMergeSort(a);
 		for (int i = 0; i < a.length; i++)
 			System.out.println(a[i]);
-		/*
-		 * double time1 = SortCompare.timeSortedInput("MergeInside", 1000, 100);
-		 * // Total for alg1. double time2 =
-		 * SortCompare.timeSortedInput("Merge", 1000, 100); // Total for alg2.
-		 * StdOut.printf("For %d random Doubles\n    %s is", 1000, "Merge");
-		 * StdOut.printf(" %.1f times faster than %s\n", time1/time2,
-		 * "MergeInside");
-		 */
 	}
 }

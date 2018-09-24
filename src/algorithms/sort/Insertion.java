@@ -20,6 +20,21 @@ public class Insertion {
 			}
 		}
 	}
+	
+	/**
+     * Rearranges the subarray a[lo..hi) in ascending order, using the natural order.
+     * @param a the array to be sorted
+     * @param lo left endpoint (inclusive)
+     * @param hi right endpoint (exclusive)
+     */
+    public static void sort(Comparable[] a, int lo, int hi) {
+        for (int i = lo; i < hi; i++) {
+            for (int j = i; j > lo && less(a[j], a[j-1]); j--) {
+                exch(a, j, j-1);
+            }
+        }
+        assert isSorted(a, lo, hi);
+    }
 
 	// exchange a[i] and a[j]
 	private static void exch(Object[] a, int i, int j) {
@@ -33,4 +48,10 @@ public class Insertion {
 		return v.compareTo(w) < 0;
 	}
 	
+	//is the array a[lo..hi) sorted
+	private static boolean isSorted(Comparable[] a, int lo, int hi) {
+        for (int i = lo+1; i < hi; i++)
+            if (less(a[i], a[i-1])) return false;
+        return true;
+    }
 }
