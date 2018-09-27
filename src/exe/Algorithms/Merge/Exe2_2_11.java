@@ -2,7 +2,9 @@ package exe.Algorithms.Merge;
 
 import java.lang.reflect.Array;
 
+import edu.princeton.cs.introcs.StdOut;
 import algorithms.sort.MergeX;
+import algorithms.sort.SortCompare;
 
 /**
  * @Description: 三种改进：1.对小规模子数组使用插入排序 2.测试待排序序列中左右半边是否已有序  
@@ -19,6 +21,10 @@ public class Exe2_2_11 extends MergeX{
     	Integer[] a = {  5, 2, 6, 8, 7, 6 ,9,10};
     	Exe2_2_11.sort(a);
         Exe2_2_11.show(a);
+        double time1=SortCompare.timeRandomInput("MergeX", 1000, 100);
+        double time2=SortCompare.timeRandomInput("Merge", 1000, 100);
+        StdOut.printf("For %d random Doubles\n    %s is", 1000, "MergeX"); 
+        StdOut.printf(" %.1f times faster than %s\n", time2/time1, "Merge"); 
     }
 	
 }
