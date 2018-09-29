@@ -1,16 +1,10 @@
-package algorithms.sort;
+package exe.Algorithms.quick;
 
+import algorithms.sort.RandomArray;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.introcs.StdOut;
-/**
- * @ClassName: Quick 
- * @Description: 最好情况：将数组对半分——NlogN；(即元素相同的序列，2.3.8)
- * 				   最坏情况：每次切分完两个子数组之一是一个空数组（即有序数组）——N^2/2次比较
- * 				   平均时间复杂度：~2NlnN(~1.39NlogN)
- * @author Goffery Gong
- * @date 2018年9月27日 下午3:19:13
- */
-public class Quick {
+
+public class Exe2_3_6 {
 	public static int time;
 	public static void sort(Comparable[] a){
 		StdRandom.shuffle(a);
@@ -51,13 +45,18 @@ public class Quick {
 		return v.compareTo(k)<0;
 	}
 	
+	public static int estimate(int N){
+		return (int) (2*N*Math.log(N));
+	}
 	public static void main(String[] args) {
-		Integer[] a={2,2,2,2,2,2};
-		//Double[] a= RandomArray.randomArray(100);
-		sort(a);
-        for (int i = 0; i < a.length; i++)
-            StdOut.print(a[i]);
-        StdOut.println();
-        System.out.println(time);
+		//打印标题
+        System.out.print("N"+"\t"+"准确值"+"\t"+"估计值");
+        System.out.println();
+        for(int N=100;N<=10000;N*=10){
+        	Double[] a= RandomArray.randomArray(N);
+        	sort(a);
+        	System.out.print(N+"\t"+time+"\t"+estimate(N));
+        	System.out.println();
+        }
 	}
 }

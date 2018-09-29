@@ -1,14 +1,20 @@
 package algorithms.sort;
+
+import edu.princeton.cs.algs4.StdRandom;
+import edu.princeton.cs.introcs.StdOut;
+
 /**
  * @ClassName: Quick3way 
  * @Description: 
- * ä¸‰å‘åˆ‡åˆ†å¿«é€Ÿæ’åºï¼šå¯¹äºåªæœ‰è‹¥å¹²ä¸ªä¸åŒä¸»é”®çš„éšæœºæ•°ç»„ï¼Œå½’å¹¶æ’åºçš„æ—¶é—´å¤æ‚åº¦æ˜¯çº¿æ€§å¯¹æ•°ï¼Œè€Œä¸‰é¡¹åˆ‡åˆ†å¿«é€Ÿæ’åºåˆ™æ˜¯çº¿æ€§çš„~(2ln2)NH;Hä¸ºé¦™æµ“ä¿¡æ¯é‡
- * ä¸‰å‘åˆ‡åˆ†çš„æœ€åæƒ…å†µå°±æ˜¯ä¸»é”®å€¼å‡ä¸åŒ
+ * ÈıÏòÇĞ·Ö¿ìËÙÅÅĞò£º¶ÔÓÚÖ»ÓĞÈô¸É¸ö²»Í¬Ö÷¼üµÄËæ»úÊı×é£¬¹é²¢ÅÅĞòµÄÊ±¼ä¸´ÔÓ¶ÈÊÇÏßĞÔ¶ÔÊı£¬¶øÈıÏîÇĞ·Ö¿ìËÙÅÅĞòÔòÊÇÏßĞÔµÄ
+ * 			   ~(2ln2)NH´Î±È½Ï;HÎªÏãÅ¨ĞÅÏ¢Á¿
+ * ÈıÏòÇĞ·ÖµÄ×î»µÇé¿ö¾ÍÊÇÖ÷¼üÖµ¾ù²»Í¬Ê±£ºH=lgN£»
  * @author Goffery Gong
- * @date 2018å¹´9æœˆ27æ—¥ ä¸Šåˆ10:30:04
+ * @date 2018Äê9ÔÂ27ÈÕ ÉÏÎç10:30:04
  */
 public class Quick3way {
 	public static void sort(Comparable[] a) {
+		StdRandom.shuffle(a);
 		sort(a, 0, a.length - 1);
 	}
 
@@ -28,7 +34,7 @@ public class Quick3way {
 				exch(a, i, gt--);
 			else
 				i++;
-		}//a[lo,lt-1]<v=a[lt,gt]<a[gt+1ï¼Œhi]æˆç«‹
+		}//a[lo,lt-1]<v=a[lt,gt]<a[gt+1£¬hi]³ÉÁ¢
 		sort(a, lo, lt - 1);
 		sort(a, gt + 1, hi);
 	}
@@ -36,7 +42,14 @@ public class Quick3way {
 	private static <T> void exch(Comparable<T>[] a, int i, int j) {
 		Comparable<T> temp = a[i];
 		a[i] = a[j];
-		a[i] = temp;
+		a[j] = temp;
 	}
 
+	public static void main(String[] args) {
+		Integer[] a={2,1,2,1,2,1,2,2,1};
+		sort(a);
+        for (int i = 0; i < a.length; i++)
+            StdOut.print(a[i]);
+        StdOut.println();
+	}
 }

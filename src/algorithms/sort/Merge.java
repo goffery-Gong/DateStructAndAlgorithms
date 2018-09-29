@@ -64,7 +64,7 @@ public class Merge{
 	}
 
 	public static void main(String[] args) {
-		Integer[] a = { 5, 2, 6, 8, 7, 6 ,9,10};
+		Integer[] a = {1,2,4,5,6};
 		//Double[] a= RandomArray.randomArray(10);
 		sort(a);
 		for (int i = 0; i < a.length; i++)
