@@ -2,6 +2,13 @@ package exe.Algorithms.quick;
 
 import edu.princeton.cs.introcs.StdOut;
 
+/**
+ * @ClassName: Exe2_3_5 
+ * @Description: 只有两种键值的数组排序
+ *
+ * @author Goffery Gong
+ * @date 2018年10月5日 下午4:54:46
+ */
 public class Exe2_3_5 {
 	public static void sort(Comparable[] a){
 		int lt=0;

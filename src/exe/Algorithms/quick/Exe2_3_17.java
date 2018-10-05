@@ -5,6 +5,13 @@ import algorithms.sort.RandomArray;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.introcs.StdOut;
 
+/**
+ * @ClassName: Exe2_3_17 
+ * @Description: 去除哨兵
+ *
+ * @author Goffery Gong
+ * @date 2018年10月5日 下午4:54:21
+ */
 public class Exe2_3_17 {
 	public static void quickSortWithNoSentinels(Comparable[] a) {
 		StdRandom.shuffle(a);

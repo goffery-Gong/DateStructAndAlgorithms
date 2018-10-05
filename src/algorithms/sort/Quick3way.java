@@ -26,6 +26,7 @@ public class Quick3way {
 		int i = lo + 1;
 		int gt = hi;
 		Comparable v = a[lt];
+		
 		while (i <= gt) {
 			int cmp = a[i].compareTo(v);
 			if (cmp < 0)
@@ -35,6 +36,7 @@ public class Quick3way {
 			else
 				i++;
 		}//a[lo,lt-1]<v=a[lt,gt]<a[gt+1£¬hi]³ÉÁ¢
+		
 		sort(a, lo, lt - 1);
 		sort(a, gt + 1, hi);
 	}

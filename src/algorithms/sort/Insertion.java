@@ -36,6 +36,7 @@ public class Insertion {
         assert isSorted(a, lo, hi);
     }
 
+    
 	// exchange a[i] and a[j]
 	private static void exch(Object[] a, int i, int j) {
 		Object swap = a[i];
