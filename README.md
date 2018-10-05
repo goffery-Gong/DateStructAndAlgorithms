@@ -1,21 +1,21 @@
 # DataStructure and Algorithms
 
-¡¶Ëã·¨£¨µÚËÄ°æ£©¡·ÊéºóÏ°Ìâ¼ÇÂ¼  
-ÊéºóµÄÌâÄ¿ºÜ¶à£¬ºÜ¶àÌâÄ¿²»½öÃ»ÓĞË¼Â·£¬¶øÇÒÍøÉÏ»¹Ò»µã¶¼ÕÒ²»µ½Í¬ÀàĞÍµÄÎÊÌâ£¬Ö»ÄÜÏ£ÍûÄÜ¹»ÔÚÓĞÏŞµÄÊ±¼äÀï¶à×öÒ»Ğ©£¬¶àÀí½âÒ»Ğ©£¬¶àĞ´Ò»Ğ©¡£
-
-# ²Î¿¼Á´½Ó
+ã€Šç®—æ³•ï¼ˆç¬¬å››ç‰ˆï¼‰ã€‹ä¹¦åä¹ é¢˜è®°å½•  
+ä¹¦åçš„é¢˜ç›®å¾ˆå¤šï¼Œå¾ˆå¤šé¢˜ç›®ä¸ä»…æ²¡æœ‰æ€è·¯ï¼Œè€Œä¸”ç½‘ä¸Šè¿˜ä¸€ç‚¹éƒ½æ‰¾ä¸åˆ°åŒç±»å‹çš„é—®é¢˜ï¼Œåªèƒ½å¸Œæœ›èƒ½å¤Ÿåœ¨æœ‰é™çš„æ—¶é—´é‡Œå¤šå†™ä¸€äº›ã€‚
+<a href="url"><img src="https://github.com/reneargento/algorithms-sedgewick-wayne/blob/master/resources/book_cover.png" align="right" height="280" width="200" ></a>
+# å‚è€ƒé“¾æ¥
 - [Dokyme/Algorithms](https://github.com/Dokyme/algorithms_4th_exercises)
 - [jimmysuncpt/Algorithms](https://github.com/jimmysuncpt/Algorithms)
-- [reneargento/algorithms-sedgewick-wayne](https://github.com/reneargento/algorithms-sedgewick-wayne)(´ğ°¸ºÜÏêÏ¸)
-- [Éò·±ĞÇCsharp](https://github.com/ikesnowy/Algorithms-4th-Edition-in-Csharp)
-- [Éò·±ĞÇhtml](https://www.cnblogs.com/ikesnowy/p/9258128.html)
+- [reneargento/algorithms-sedgewick-wayne](https://github.com/reneargento/algorithms-sedgewick-wayne)(ç­”æ¡ˆå¾ˆè¯¦ç»†)
+- [æ²ˆç¹æ˜ŸCsharp](https://github.com/ikesnowy/Algorithms-4th-Edition-in-Csharp)
+- [æ²ˆç¹æ˜Ÿhtml](https://www.cnblogs.com/ikesnowy/p/9258128.html)
 
-# 2.ÅÅĞò
-## 2.1 ³õ¼¶ÅÅĞòËã·¨
+# 2.æ’åº
+## 2.1 åˆçº§æ’åºç®—æ³•
 
-## 2.2 ¹é²¢ÅÅĞò
-- [¹é²¢ÅÅĞòÏ°Ìâ](https://github.com/goffery-Gong/DateStructAndAlgorithms/blob/master/src/exe/Algorithms/Merge/Exe2_2_X.md)
-## 2.3 ¿ìËÙÅÅĞò
-- [¿ìËÙÅÅĞòÏ°Ìâ](https://github.com/goffery-Gong/DateStructAndAlgorithms/blob/master/src/exe/Algorithms/quick/QuickSortExe.md)
+## 2.2 å½’å¹¶æ’åº
+- [å½’å¹¶æ’åºä¹ é¢˜](https://github.com/goffery-Gong/DateStructAndAlgorithms/blob/master/src/exe/Algorithms/Merge/Exe2_2_X.md)
+## 2.3 å¿«é€Ÿæ’åº
+- [å¿«é€Ÿæ’åºä¹ é¢˜](https://github.com/goffery-Gong/DateStructAndAlgorithms/blob/master/src/exe/Algorithms/quick/QuickSortExe.md)
 ## 2.4 
 
