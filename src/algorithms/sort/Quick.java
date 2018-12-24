@@ -8,8 +8,8 @@ import edu.princeton.cs.introcs.StdOut;
 /**
  * @ClassName: Quick 
  * @Description: 最好情况：将数组对半分——NlogN；(即元素相同的序列，2.3.8)
- * 				   最坏情况：每次切分完两个子数组之一是一个空数组（即有序数组）——N^2/2次比较
- * 				   平均时间复杂度：~2NlnN(~1.39NlogN)
+ * 				 最坏情况：每次切分完两个子数组之一是一个空数组（即有序数组）——N^2/2次比较
+ * 				 平均时间复杂度：~2NlnN(~1.39NlogN)
  * @author Goffery Gong
  * @date 2018年9月27日 下午3:19:13
  */
@@ -64,7 +64,7 @@ public class Quick {
 		//Double[] a= RandomArray.randomArray(100);
 		sort(a);
         for (int i = 0; i < a.length; i++)
-            StdOut.print(a[i]);
+//            StdOut.print(a[i]);
         StdOut.println();
         System.out.println(time);
 	}
